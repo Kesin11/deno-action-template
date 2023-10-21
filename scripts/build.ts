@@ -20,8 +20,7 @@ await build({
     // Dummy package.json
     name: "The name of your action here",
     version: "0.1.0",
-    description:
-      "Provide a description here",
+    description: "Provide a description here",
   },
 });
 

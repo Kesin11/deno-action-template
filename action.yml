@@ -9,14 +9,14 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
+  message:
     description: 'Your input description here'
     required: true
-    default: '1000'
+    default: 'test message'
 
 # Define your outputs here.
 outputs:
-  time:
+  message:
     description: 'Your output description here'
 runs:
   using: node20
