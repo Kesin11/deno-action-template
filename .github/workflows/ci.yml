@@ -39,3 +39,5 @@ jobs:
         run: deno test -A
       - name: Run self
         uses: ./
+        with:
+          message: foobar
