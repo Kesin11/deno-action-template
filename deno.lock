@@ -1,5 +1,44 @@
 {
   "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:@actions/core@1.10.1": "npm:@actions/core@1.10.1"
+    },
+    "npm": {
+      "@actions/core@1.10.1": {
+        "integrity": "sha512-3lBR9EDAY+iYIpTnTIXmWcNbX3T2kCkAEQGIQx4NVQ0575nk2k3GRZDTPQG+vVtS2izSLmINlxXf0uLtnrTP+g==",
+        "dependencies": {
+          "@actions/http-client": "@actions/http-client@2.2.0",
+          "uuid": "uuid@8.3.2"
+        }
+      },
+      "@actions/http-client@2.2.0": {
+        "integrity": "sha512-q+epW0trjVUUHboliPb4UF9g2msf+w61b32tAkFEwL/IwP0DQWgbCMM0Hbe3e3WXSKz5VcUXbzJQgy8Hkra/Lg==",
+        "dependencies": {
+          "tunnel": "tunnel@0.0.6",
+          "undici": "undici@5.26.4"
+        }
+      },
+      "@fastify/busboy@2.0.0": {
+        "integrity": "sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==",
+        "dependencies": {}
+      },
+      "tunnel@0.0.6": {
+        "integrity": "sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==",
+        "dependencies": {}
+      },
+      "undici@5.26.4": {
+        "integrity": "sha512-OG+QOf0fTLtazL9P9X7yqWxQ+Z0395Wk6DSkyTxtaq3wQEjIroVe7Y4asCX/vcCxYpNGMnwz8F0qbRYUoaQVMw==",
+        "dependencies": {
+          "@fastify/busboy": "@fastify/busboy@2.0.0"
+        }
+      },
+      "uuid@8.3.2": {
+        "integrity": "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==",
+        "dependencies": {}
+      }
+    }
+  },
   "remote": {
     "https://deno.land/std@0.204.0/assert/_constants.ts": "8a9da298c26750b28b326b297316cdde860bc237533b07e1337c021379e6b2a9",
     "https://deno.land/std@0.204.0/assert/_diff.ts": "58e1461cc61d8eb1eacbf2a010932bf6a05b79344b02ca38095f9b805795dc48",
