@@ -4,7 +4,7 @@
 
 TypeScript Action with Deno template inspire by [actions/typescript-action](https://github.com/actions/typescript-action).
 
-This template includes compilation TypeScript(deno) to javascript support, tests, a validation workflow, publishing, and versioning guidance.
+This template includes compilation TypeScript(deno) to JavaScript support, tests, a validation workflow, publishing, and versioning guidance.
 
 ## Create Your Own Action
 
@@ -33,24 +33,24 @@ When you copy this repository, update [`action.yml`](./action.yml) with the name
 
 ## Update the Action Code
 
-The [`src/`](./src/) directory has entrypoint script and library. `main.ts` and `post.ts` are entrypoint that will be run when your actions is invoked, others are library codes. The [`tests/`](./tests/) directory has test codes.
+The [`src/`](./src/) directory contains the entrypoint scripts and libraries. `main.ts` and `post.ts` are the entrypoints that will be executed when your action is invoked, others are library code. The [`tests/`](./tests/) directory contains test code.
 
-You can run tests with `deno test -A` command, also you can run `deno task dev` to run tests automatically when you change codes.
+You can run tests with `deno test -A` command, or you can run `deno task dev` to run tests automatically when you change codes.
 
-After change [`src/`] or some dependencies, you need to run `deno task bundle` to bundle your code to `dist/` directory. Since GitHub Actions need to javascript, `deno task bundle` will compile deno TypeScript to javascript using [dnt](https://github.com/denoland/dnt) then bundle it with dependencies using [esbuild](https://esbuild.github.io/).
+After changing `src/` or some dependencies, you need to run `deno task bundle` to bundle your code into `dist/` directory. Since GitHub Actions requires JavaScript, `deno task bundle` will compile deno TypeScript to JavaScript using [dnt](https://github.com/denoland/dnt) and then bundle it with dependencies using [esbuild](https://esbuild.github.io/).
 
-Finally, you have to commit `dist/` directory and push it to GitHub.
+Finally, you need to commit `dist/` directory and push it to GitHub.
 
 ## Validate the Action
 
-You can check format, lint, test, and bundle with GitHub Actions. See [ci.yml](./.github/workflows/ci.yml) for details.
+You can validate format, lint, test, and bundle with GitHub Actions. See [ci.yml](./.github/workflows/ci.yml) for details.
 
 ## Publish the Action
 
-After edit codes, you can publish your action to GitHub Releases.
+After editing codes, you can publish your action to GitHub Releases.
 
-When push 'main' branch [`release-drafter`](https://github.com/release-drafter/release-drafter) will make draft release and also changelog automatically by pull-requests label. You can change ull-requests category in changelog by editing pull-request label directly If you want.
+When you push to 'main' branch [`release-drafter`](https://github.com/release-drafter/release-drafter) will automatically make the draft release and also the changelog by pull-requests label. You can change pull-requests category in the changelog by editing the pull-request label directly if you want.
 
-When time to publish new version, you can do it by workflow_dispatch relese.yml from GitHub. `release-drafter` will chose next version by Semantic Versioning then tagging and publish Releases.
+When it is time to publish new version, you can do it by dispatch relese.yml from GitHub. `release-drafter` will choose the next version by semantic versioning then tag and publish Github Releases.
 
 See [release.yml](./.github/workflows/release.yml) and [release-drafter.yml](./.github/release-drafter.yml) for details.
