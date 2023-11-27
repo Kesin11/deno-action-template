@@ -35,8 +35,8 @@ await esbuild.build({
   platform: "node",
   target: "node20",
   format: "cjs",
-  minify: false,
-  sourcemap: false,
+  minify: true,
+  sourcemap: true,
 }).finally(() => {
   esbuild.stop();
 });
