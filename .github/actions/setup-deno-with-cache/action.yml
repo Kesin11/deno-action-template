@@ -15,4 +15,4 @@ runs:
     - name: Setup Node.js for dnt
       uses: actions/setup-node@v3
       with:
-        node-version: 20
+        node-version: lts/*
