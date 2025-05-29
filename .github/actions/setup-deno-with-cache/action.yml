@@ -11,7 +11,7 @@ runs:
           deno-${{ github.job }}-${{ runner.os }}-
     - uses: denoland/setup-deno@v1
       with:
-        deno-version: v1.x
+        deno-version: v2.x
     - name: Setup Node.js for dnt
       uses: actions/setup-node@v3
       with:
