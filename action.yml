@@ -1,6 +1,6 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: "The name of your action here"
+description: "Provide a description here"
+author: "Your name or organization here"
 
 # Metadata for market place
 branding:
@@ -10,14 +10,14 @@ branding:
 # Define your inputs here.
 inputs:
   message:
-    description: 'Your input description here'
+    description: "Your input description here"
     required: true
-    default: 'test message'
+    default: "test message"
 
 # Define your outputs here.
 outputs:
   message:
-    description: 'Your output description here'
+    description: "Your output description here"
 runs:
   using: node20
   main: dist/main.js
